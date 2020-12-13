@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Talk</title>
     <style>
+        nav {
+    background-color: var(--primary);
+    text-align: center;
+    display: block;
+}
         textarea{
             width: 80%;
             padding: 1rem;
@@ -12,7 +17,7 @@
             height: 10vh;
             margin: 1rem;
         }
-
+        
         #output{
             border: 1px solid black;
             height: 10vh;
@@ -20,17 +25,41 @@
             margin: 1rem;
             padding: 1rem;
         }
+        div{
+            display: block;
+        }
+        nav{
+            text-align: center;
+            font-family: 'Kalam', cursive;
+        }
+        button {
+        background-color: #F2C94C;
+        border: none;
+        margin: 1rem 0rem;
+        padding: 1rem 2rem;
+        justify-content: center;
+        font-family: 'Kalam', cursive;
+        font-size: large;
+        }
+        #outputUp{
+            font-size: small;
+            font-family: 'Kalam', cursive;
+        }
     </style>
 </head>
-<body>
-    <h1>Banana Talk</h1>
+<body style="margin: 0%;">
+    <nav  style="background-color: #F2C94C" >
+    <div style="font-size: 2rem; padding: 1rem; class=" banana">
+            Banana talk
+        </div>
+    </nav>
     <textarea id="text-input" placeholder="Write you sentence and we will convert it into banana"></textarea>
-
+    
     <button id="btn-translate">Translate</button>
+    
+    <div id="outputUp">Translation will come here 👇</div>
 
-    <div style="font-size: larger;">Output will come here</div>
-
-    <div id="output"></dic>
+    <div id="output"></div>
 
     <script SRC="app.js" type="text/javascript"></script>
 </body>
